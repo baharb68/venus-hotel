@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- carousel -->
+    <div class="container-fluid position-relative p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/carousel1.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/carousel2.jpg" class="d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/carousel3.jpg" class="d-block w-100 " alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="gradient h-100 w-100 position-absolute">
+            <img src="img/carousel-gradienet.png" alt="" class="w-100 h-100 ">
+        </div>
+        <div class="reserve-form d-none d-md-block d-md-flex position-absolute">
+            <div class="d-flex py-4 pr-5">
+                <input type="text" placeholder="تاریخ ورود" class="p-2 mx-2">
+                <input type="text" placeholder="تاریخ خروج" class="p-2 mx-2">
+                <input type="text" placeholder=" بزرگسال" class="p-2 mx-2">
+                <input type="text" placeholder=" کودکان(3-6 سال)" class="p-2 mx-2">
+            </div>
+            <div class="r-btn d-flex align-items-center justify-content-center px-5 mr-2">رزرو آنلاین</div>
+        </div>
+    <!-- navbar -->
+        <div class="header container-fluid position-absolute">
+            <div class="navbar container d-flex" >
+                <div class="col-5 d-flex flex-column p-0">
+                    <div class="line d-flex justify-content-between pt-5 pb-2">
+                        <div class="d-flex align-items-center">
+                            <!-- <button class="btn px-3 py-1">English</button> -->
+                        </div>
+                        <h1 class="pl-2">هتل</h1>
+                    </div>
+                    <ul class="nav justify-content-end pl-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره هتل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتاق ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">گالری</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo col-1 p-0 d-flex align-items-start">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="col-6 d-flex flex-column p-0">
+                    <div class="line d-flex justify-content-between pt-5 pb-2">
+                        <h1 class="pr-2">ونوس</h1>
+                        <div class="d-none d-md-block d-flex align-items-center">
+                            <button class="btn px-3 py-1">Arabic</button>
+                            <button class="btn px-3 py-1 mr-2">English</button>
+                        </div>
+                    </div>
+                    <ul class="nav justify-content-start pr-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">امکانات هتل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">خدمات هتل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">پیشنهاد ویژه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">از نگاه مهمانان</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- end of navbar -->
+    </div>
+<!-- end of carousel -->
+<!-- services -->
+    <div class="container d-flex flex-column justify-content-center align-items-center py-5">
+        <div class="sec-title d-flex flex-column align-items-center justify-content-center">
+            <h2>خدمات ما</h2>
+            <img src="img/seperator.png" alt="">
+        </div>
+        <div class="d-flex flex-wrap mt-3">
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/wifi.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right">اینترنت پر سرعت</h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/saloon.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right">سالن کنفرانس</h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/breakfast.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right">سرویس صبحانه </h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/transfer.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right"> ترانسفر فرودگاهی</h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/restaurant.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right">  رستوران 24 ساعته</h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+            <div class="service col-12 col-md-4 d-flex mt-5">
+                <div class="col-3 p-0">
+                    <img src="img/onlinebooking.png" alt="" class="w-50 ml-2">
+                </div>
+                <div class="col-9 d-flex flex-column p-0 pr-2">
+                    <h3 class="text-right">  رزرو آنلاین</h3>
+                    <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end of services -->
+<!-- rooms -->
+    <div class="bg-room container-fluid">
+        <div class="container d-flex flex-column justify-content-center align-items-center py-5">
+            <div class="sec-title d-flex flex-column align-items-center justify-content-center">
+                <h2>اتاق ها و سوئیت ها </h2>
+                <img src="img/seperator.png" alt="">
+            </div>
+            <div class="d-flex flex-wrap w-100 mt-5">
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/singlesuit.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سینگل</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/1bedroom.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سوئیت یک خواب</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/doublebed.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">دوتخته</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/doublebedsuite.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سوئیت دو تخته</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/3bedroom.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سه تخته</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/4bedroom.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سوئیت چهار تخته</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/singlesuit.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سینگل</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/1bedroom.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">سوئیت یک خواب</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="room position-relative d-flex">
+                        <img src="img/doublebed.jpg" alt="" class="w-100">
+                        <div class="roomhover h-100 w-100 position-absolute d-flex align-items-center justify-content-center ">
+                        </div>
+                        <h4 class="text-white position-absolute pr-3">دوتخته</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end of rooms -->
+<!-- saloons -->
+    <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+        <div class="sec-title d-flex flex-column align-items-center justify-content-center">
+            <h2>سالن های پذیرایی</h2>
+            <img src="img/seperator.png" alt="">
+        </div>
+        <div class="saloon mt-5">
+            <ul class="d-flex p-0">
+                <li>
+                    <!-- <div class="position-relative"> -->
+                    <img src="img/restaurant1.jpg" alt="">
+                    <!-- <div class="w-100 h-100 d-flex jusrify-content-center align-items-center position-absolute"></div> -->
+                        <!-- <h4 class="position-absolute">رستوران</h4> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                </li>
+                <li>
+                    <img src="img/restaurant2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/restaurant3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="img/restaurant4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- end of saloons -->
+<!-- about us -->
+<div class="about d-flex w-100 py-5">
+        <div class="container d-flex flex-column align-items-center justify-content-start mt-3 ">
+            <div class="sec-title d-flex flex-column align-items-center justify-content-start mb-4">
+                <h2 class=>درباره هتل <span> ونوس</span></h2>
+                <!-- <img src="img/seperator.png" alt=""> -->
+            </div>
+            <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            <p class="text-justify mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            <h4><img src="img/icons8-address-50.png" alt="" class="ml-3">رفسنجان،خیابان....</h4>
+            <h4><img src="img/icons8-phone-50.png" alt="" class="ml-3">34334567،09131934859</h4>
+        </div>
+    </div>
+    <!-- <div class=" d-flex flex-column justify-content-center align-items-center">
+        <div class="about d-flex">
+            <div class="col-12 col-md-8 d-flex flex-column align-items-center justify-content-start mt-3 p-5">
+                <div class="sec-title d-flex flex-column align-items-center justify-content-start mb-4">
+                    <h2>به هتل <span> ونوس</span> خوش آمدید </h2> -->
+                    <!-- <img src="img/seperator.png" alt=""> -->
+                <!-- </div>
+                <p class="text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                <p class="text-justify mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                <h4><img src="img/icons8-address-50.png" alt="" class="ml-3">رفسنجان،خیابان....</h4>
+                <h4><img src="img/icons8-phone-50.png" alt="" class="ml-3">34334567،09131934859</h4>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-end p-0">
+                <img src="img/about.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div> -->
+<!-- end of about us -->
+<!-- map -->
+    <img src="img/map.jpg" alt="" class="w-100">
+<!-- end ofmap -->
+<div class="containerfluid">
+
+</div>
+<!-- footer -->
+    <div class="container-fluid bg-footer pt-5 px-0">
+        <div class="d-flex flex-column">
+            <div class="footer container d-flex flex-column flex-md-row">
+
+                <div class="col-12 col-md-6 d-flex flex-column ">
+                    <div class="d-flex flex-column flex-md-row align-items-start">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column align-items-start">
+                                <!-- Footer main menu -->
+                                <h3 class="pb-3 mb-4 w-50 text-right">منو اصلی</h3>
+                                <ul class="footernav navbar-nav d-flex flex-column p-0 text-right w-50">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">درباره هتل</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">اتاق ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">گالری</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">خدمات هتل</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">پیشنهاد ویژه</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">از نگاه مهمانان</a>
+                                    </li>
+                                </ul>
+                                <!-- End of Footer main menu -->
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 ">
+                            <div class="d-flex flex-column align-items-start">
+                                <h3 class="pb-3 mb-4  w-50 text-right">خدمات ما </h3>
+                                <!-- Footer courses -->
+                                <div class="footercourse d-flex pb-2 ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/transfer.png" alt="" class="w-100"/>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center px-3 w-100">
+                                        <h4 class=" w-100 text-right">ترانسفر فرودگاهی</h4>
+                                    </div>
+                                </div>
+                                <div class="footercourse d-flex py-2 ">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/wifi.png" alt="" class="w-100"/>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center px-3 w-100">
+                                        <h4 class=" w-100 text-right">اینترنت پر سرعت </h4>
+                                    </div>
+                                </div>
+                                <div class="footercourse d-flex py-2">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/breakfast.png" alt="" class="w-100"/>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center px-3 w-100">
+                                        <h4 class=" w-100 text-right">سرویس صبحانه</h4>
+                                    </div>
+                                </div>
+                                <!-- End of Footer courses -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="trust d-flex justify-content-center w-75 mt-4">
+                        <img src="img/trusticon.png" alt="" class="mx-2">
+                        <img src="img/trusticon2.png" alt="" class="mx-2">
+                        <img src="img/trusticon3.png" alt="" class="mx-2">
+                    </div> -->
+                </div> 
+                <div class="col-12 col-md-3 d-flex flex-column">
+                    <div class="d-flex flex-column">
+                        <h3 class=" pb-3 mb-4 w-100 text-right">عضویت در خبرنامه</h3>
+                        <div class="d-flex flex-column">
+                            <div class="input-group px-2 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon3">ارسال</span>
+                                </div>
+                                <input type="text" class="form-control text-right py-0" id="basic-url" aria-describedby="basic-addon3" placeholder="لطفا ایمیل خود را وارد کنید"/>
+                            </div>
+                            <div class="d-flex justify-content-start pt-2 pt-md-4">
+                                <div class="follow d-flex align-items-center justify-content-center ml-1">
+                                    <img src="img/icons8-telegram-app-50.png" alt=""/>
+                                </div>
+                                <div class="follow d-flex align-items-center justify-content-center ml-1">
+                                    <img src="img/icons8-whatsapp-50.png" alt=""/>
+                                </div>
+                                <div class="follow d-flex align-items-center justify-content-center ml-1">
+                                    <img src="img/icons8-instagram-50.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <form>
+                        <div class="form-group d-flex flex-column align-items-start ">
+                            <label htmlFor="inputEmail4">نام و نام خانوادگی:</label>
+                            <input type="email" class="form-control form-control-sm" id="inputEmail4" placeholder=""/>
+                        </div>
+                        <div class="form-group d-flex flex-column align-items-start">
+                            <label htmlFor="inputAddress">ایمیل: </label>
+                            <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder=""/>
+                        </div>
+                        <div class="form-group d-flex flex-column align-items-start">
+                            <label htmlFor="exampleFormControlTextarea1">پیام شما:</label>
+                            <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        </div>
+                        <button type="submit" class="btn mt-3">ارسال</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="container bg-end d-flex align-items-center justify-content-between mt-5 p-4 w-100">
+            <h6 class="text-white m-0">کلیه حقوق این سایت محفوظ می باشد.</h6>
+            <h6 class="text-white m-0">Copyright <img src="img/icons8-copyright-50.png" class="mx-1" alt=""> 2019, all rights reserved</h6>
+        </div>
+    </div>
+<!-- end of footer -->
+
+
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

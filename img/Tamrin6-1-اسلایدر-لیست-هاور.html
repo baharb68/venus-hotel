@@ -1,0 +1,94 @@
+﻿<html>
+	<head>
+		<title>تمرین تورج امین فر</title>
+		<style>
+			*
+			{
+				margin:0; 
+				padding:0;
+			}
+			body
+			{
+				font-family:tahoma;
+				background: repeating-linear-gradient(85deg,#F9F9F9 0px,#F9F9F9 5px,#EFEFEF 5px,#EFEFEF 10px);
+			}
+			#heater
+			{
+				width:980px;
+				height:100px;
+				text-align:right;
+				margin:0 auto 10px auto;
+				color:rgba(0,0,0,.5);
+				padding:10px 0 0 0;
+				direction:rtl;
+			}
+			#heater h1
+			{
+				font-size:24px;
+				line-height:50px;
+			}
+			#heater h4
+			{
+				font-size:14px;
+				line-height:20px;
+			}
+			.container
+			{
+				width:980px;
+				height:400px;
+				overflow:hidden;
+				margin:0 auto;
+				box-shadow:-1px 1px 10px black;
+			}
+			.container ul
+			{
+				width:1600px;
+				/* این کد فقط برای مرورگرهای خاص می باشد که ممکن است دچار سو سو زدگی بعد از هاور شدن عکس ها گردند */
+				/* طول تصاویر در کار هم در نهایت به 1585 پیکسل خواهد رسید ، 3*75 + 2*680 */
+			}
+			.container ul li
+			{
+				position:relative;
+				display:block;
+				width:196px;
+				float:left;
+				transition:width 0.4s;
+			}
+			.container:hover ul li
+			{
+				width:75px;
+			}
+			.container ul li:hover
+			{
+				width:680px;
+			}
+
+			.container li img
+			{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="heater"><h1>تمرین جلسه هفتم</h1><h4>تورج امین فر</h4></div>
+		<div class="container">
+			<ul>
+				<li>
+					<img src="images/ice-age1.jpg" alt="عکس یکم" />
+				</li>
+				<li>
+					<img src="images/ice-age2.jpg" alt="عکس دوم" />
+				</li>
+				<li>
+					<img src="images/ice-age3.jpg" alt="عکس سوم" />
+				</li>
+				<li>
+					<img src="images/ice-age4.jpg" alt="عکس چهارم" />
+				</li>
+				<li>
+					<img src="images/ice-age5.jpg" alt="عکس پنجم" />
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
